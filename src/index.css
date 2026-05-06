@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 20% 97%;
+    --foreground: 150 10% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 10% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 10% 12%;
+
+    --primary: 152 60% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 25% 92%;
+    --secondary-foreground: 150 10% 20%;
+
+    --muted: 140 12% 93%;
+    --muted-foreground: 150 8% 46%;
+
+    --accent: 148 40% 88%;
+    --accent-foreground: 152 60% 25%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 145 12% 86%;
+    --input: 145 12% 86%;
+    --ring: 152 60% 36%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 155 25% 14%;
+    --sidebar-foreground: 145 20% 90%;
+    --sidebar-primary: 152 60% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 155 18% 20%;
+    --sidebar-accent-foreground: 145 20% 90%;
+    --sidebar-border: 155 15% 22%;
+    --sidebar-ring: 152 60% 45%;
+
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}

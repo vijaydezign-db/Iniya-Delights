@@ -1,0 +1,1 @@
+ALTER TABLE public.products ADD COLUMN selling_price numeric DEFAULT NULL;
